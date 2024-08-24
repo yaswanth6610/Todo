@@ -112,7 +112,6 @@ body {
   background-color: rgba(73, 22, 22, 0.282);
 }
 
-
 .modal {
   display: none;
   position: fixed;
@@ -196,6 +195,7 @@ button#submitEdit:hover {
   border-radius: 5px;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   #task {
     max-width: 400px;
@@ -206,20 +206,14 @@ button#submitEdit:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   #task {
     max-width: 300px;
   }
 
   #todos {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 1fr; /* Display one item per row */
   }
 
-  .todo h4 {
-    font-size: 14px;
-  }
-
-  button#submitEdit, .todo-buttons button {
-    font-size: 0.8em;
-  }
+ 
 }
