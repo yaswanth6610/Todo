@@ -195,18 +195,9 @@ button#submitEdit:hover {
   border-radius: 5px;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-  #task {
-    max-width: 400px;
-  }
 
-  #todos {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
 
-@media (max-width: 580px) {
+@media (max-width: 500px) {
   #task {
     max-width: 300px;
   }
